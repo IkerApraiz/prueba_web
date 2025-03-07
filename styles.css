@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+header.scrolled {
+    opacity: 0; /* Desaparece al hacer scroll */
+    pointer-events: none; /* Desactiva interacciones con el header cuando desaparece */
+}
+
+// use litera as the base
+$theme: "lumen" !default;
+
+// fonts
+$font-family-sans-serif: "Roboto", Roboto, serif;
+$font-family-monospace: "Fira Mono", Fira;
+
+// colours
+// $body-bg: #FFFBF7;
+$link-color: #E06E53;
+$navbar-hl: #E06E53;
+
+.h4 {
+  font-size: 1.11rem !important;
+}
+
+h4 {
+  font-size: 1.11rem !important;
+}
+
+.text-image-container {
+   position: relative; /* Posiciona los elementos dentro del contenedor */
+   max-height: 100vh;
+   height: 52vh;
+   overflow: hidden;
+   display: flex; /* Crea un diseño en línea (horizontal) */
+   align-items: center; /* Alinea verticalmente los elementos */
+   justify-content: space-between;
+   margin: 15;/* Deja espacio entre el texto y la imagen */
+  }
+
+.text-content {
+    flex: 1; /* Ocupa más espacio para el texto */
+    padding-right: 1rem; /* Espaciado a la derecha */
+}
+
+.image-content {
+    flex: 0.2; /* Ocupa menos espacio para la imagen */
+}
+
+.image-content img {
+    max-width: 60%; /* Asegura que la imagen no se salga del contenedor */
+    height: 100%;
+    left: 0;/* Mantiene las proporciones */
+}
+
+.image-content-1 {
+    flex: 0.2; /* Ocupa menos espacio para la imagen */
+}
+
+.image-content-1 img {
+    max-width: 60%; /* Asegura que la imagen no se salga del contenedor */
+    height: 100%;
+    right: 0;
+    float: right;/* Mantiene las proporciones */
+}
+
+
+
